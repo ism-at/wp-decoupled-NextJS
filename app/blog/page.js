@@ -1,8 +1,8 @@
-import "./page.css";
-import getData from "./utils/fetch";
+import "./style.css";
+import getData from "../utils/fetch";
 
-export default async function Home() {
-  const data = await getData(66);
+export default async function Blog() {
+  const data = await getData(68);
   return (
     <main className={`mt-4 pb-6 ${data.title.rendered.toLowerCase()}`}>
       <h1
