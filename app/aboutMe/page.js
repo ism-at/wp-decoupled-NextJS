@@ -2,7 +2,7 @@ import "./style.css";
 import getData from "../utils/fetch";
 
 export default async function Project() {
-  const data = await getData(70);
+  const data = await getData(15);
   return (
     <main
       className={`mt-4 pb-6 ${data.title.rendered
