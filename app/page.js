@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import "./page.css";
 import Image from "next/image";
 import getData from "./utils/fetch";
@@ -14,12 +15,18 @@ export default async function Home() {
         className="relative"
         dangerouslySetInnerHTML={{ __html: data.content.rendered }}
       />
-      {/* <Image
+      <Image
         src="http://ismailwp.infinityfreeapp.com/wp-content/uploads/2023/09/01.jpg"
         className="image-header"
         width="2000"
         height="3000"
-      /> */}
+      />
+      <Image
+        src="https://ismailwp.infinityfreeapp.com/wp-content/uploads/2023/09/05-1-scaled.jpg"
+        className="image-header"
+        width="2000"
+        height="3000"
+      />
     </main>
   );
 }

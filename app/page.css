@@ -31,20 +31,6 @@
 .wp-block-cover__image-background.wp-image-18.is-repeated {
   background-image: none !important;
 }
-.header-container {
-  position: absolute;
-  color: white;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-.header-container .wp-block-group__inner-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.image-header {
+  display: none;
 }
