@@ -10,7 +10,7 @@ export default async function Blog() {
   const projectItems = data.map((project) => (
     <article
       key={project.id}
-      className="bg-gray-900 text-white p-4 rounded shadow-sm "
+      className="bg-gray-900 text-white p-4 rounded shadow-sm mt-5"
     >
       <header className="flex justify-center items-center mb-5">
         <IoLogoWordpress size={200} />
@@ -20,7 +20,7 @@ export default async function Blog() {
     </article>
   ));
   return (
-    <main className={`mt-4 pb-6 `}>
+    <main className={`mt-4 pb-6`}>
       <section className="container mx-auto md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 items-start justify-center">
         {projectItems}
       </section>

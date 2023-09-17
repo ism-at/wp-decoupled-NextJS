@@ -2,11 +2,11 @@ import Link from "next/link";
 
 export default function Layout() {
   return (
-    <nav className="flex justify-between items-center py-6 px-4 bg-gray-100">
+    <nav className="sm:flex justify-between items-center py-6 px-4 bg-gray-100">
       <h1 className="uppercase text-gray-900 font-bold text-3xl">
         <Link href="/">ismail</Link>
       </h1>
-      <ul className="flex gap-3">
+      <ul className="sm:flex gap-3">
         <li>
           <Link
             href="/"

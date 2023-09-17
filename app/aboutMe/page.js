@@ -5,7 +5,7 @@ export default async function Project() {
   const data = await getData(15);
   return (
     <main
-      className={`mt-4 pb-6 ${data.title.rendered
+      className={`mt-4 pb-6 overflow-hidden ${data.title.rendered
         .toLowerCase()
         .replace(" ", "_")
         .replace("!", "")}`}
@@ -14,7 +14,10 @@ export default async function Project() {
         className="text-4xl my-2 text-center font-bold uppercase"
         dangerouslySetInnerHTML={{ __html: data.title.rendered }}
       />
-      <section dangerouslySetInnerHTML={{ __html: data.content.rendered }} />
+      <section
+        className="container mx-5 overflow-hidden md:flex justify-center flex-col items-center"
+        dangerouslySetInnerHTML={{ __html: data.content.rendered }}
+      />
     </main>
   );
 }

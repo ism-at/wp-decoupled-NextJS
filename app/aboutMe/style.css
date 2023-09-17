@@ -1,18 +1,16 @@
-.about_me section > div {
-@apply flex justify-between items-center p-4 m-2 gap-4;
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
 }
-@media screen and (max-width: 700px) {
-    .about_me section > div {
-        @apply block;
-      }
-      .about_me section div div:first-child img{
-        @apply mb-4 rounded-md shadow-lg;
-      }
-  }
-.about_me section div div:first {
-  flex: 1 1 25%;
+p img {
+  width: 200px;
+  margin-bottom: 20px;
+  @apply rounded-lg;
 }
-
-.about_me section div div:last-child {
-  flex: 1 1 75%;
+section > p {
+  /* display: block; */
+  margin-top: 10px;
+  padding: 25px;
 }

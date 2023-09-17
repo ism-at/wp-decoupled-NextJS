@@ -7,7 +7,10 @@ export default async function Project() {
   );
   const data = await res.json();
   const projectItems = data.map((project) => (
-    <article key={project.id} className="bg-gray-900 text-white p-4 h-[200px]">
+    <article
+      key={project.id}
+      className="bg-gray-900 text-white p-4 md:h-[200px] mt-5 rounded-md shadow-md"
+    >
       <h2>{project.title.rendered}</h2>
       <p dangerouslySetInnerHTML={{ __html: project.content.rendered }} />
     </article>
