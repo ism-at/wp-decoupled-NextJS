@@ -1,16 +1,16 @@
 h1 {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 2rem;
   text-transform: uppercase;
+  text-align: center;
 }
 p img {
   width: 200px;
   margin-bottom: 20px;
   @apply rounded-lg;
+  text-align: center;
 }
 section > p {
-  /* display: block; */
   margin-top: 10px;
   padding: 25px;
 }

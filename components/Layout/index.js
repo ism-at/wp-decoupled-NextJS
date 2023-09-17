@@ -6,7 +6,7 @@ export default function Layout() {
       <h1 className="uppercase text-gray-900 font-bold text-3xl">
         <Link href="/">ismail</Link>
       </h1>
-      <ul className="sm:flex gap-3">
+      <ul className="sm:flex mt-4 sm:mt-0 gap-3">
         <li>
           <Link
             href="/"

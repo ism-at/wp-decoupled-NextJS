@@ -15,7 +15,7 @@ export default async function Project() {
         dangerouslySetInnerHTML={{ __html: data.title.rendered }}
       />
       <section
-        className="container mx-5 overflow-hidden md:flex justify-center flex-col items-center"
+        className="container mx-auto overflow-hidden md:flex justify-center flex-col items-center"
         dangerouslySetInnerHTML={{ __html: data.content.rendered }}
       />
     </main>
