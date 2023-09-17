@@ -31,11 +31,20 @@
 .wp-block-cover__image-background.wp-image-18.is-repeated {
   background-image: none !important;
 }
-img {
+.header-container {
   position: absolute;
-  top: 20vh;
-  height: 100vh;
+  color: white;
+  top: 0;
+  left: 0;
+  right: 0;
   bottom: 0;
-  z-index: -1;
-  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.header-container .wp-block-group__inner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

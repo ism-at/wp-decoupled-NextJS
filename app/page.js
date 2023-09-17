@@ -1,4 +1,5 @@
 import "./page.css";
+import Image from "next/image";
 import getData from "./utils/fetch";
 
 export default async function Home() {
@@ -9,8 +10,16 @@ export default async function Home() {
         className="text-4xl my-2 text-center font-bold uppercase"
         dangerouslySetInnerHTML={{ __html: data.title.rendered }}
       />
-      <section dangerouslySetInnerHTML={{ __html: data.content.rendered }} />
-      <img src="http://ismailwp.infinityfreeapp.com/wp-content/uploads/2023/09/01.jpg" />
+      <section
+        className="relative"
+        dangerouslySetInnerHTML={{ __html: data.content.rendered }}
+      />
+      {/* <Image
+        src="http://ismailwp.infinityfreeapp.com/wp-content/uploads/2023/09/01.jpg"
+        className="image-header"
+        width="2000"
+        height="3000"
+      /> */}
     </main>
   );
 }
