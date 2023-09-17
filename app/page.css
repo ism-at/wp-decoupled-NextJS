@@ -28,3 +28,14 @@
 .wp-block-heading {
   font-size: 3rem !important;
 }
+.wp-block-cover__image-background.wp-image-18.is-repeated {
+  background-image: none !important;
+}
+img {
+  position: absolute;
+  top: 20vh;
+  height: 100vh;
+  bottom: 0;
+  z-index: -1;
+  width: 100vw;
+}

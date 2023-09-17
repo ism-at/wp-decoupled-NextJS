@@ -10,6 +10,7 @@ export default async function Home() {
         dangerouslySetInnerHTML={{ __html: data.title.rendered }}
       />
       <section dangerouslySetInnerHTML={{ __html: data.content.rendered }} />
+      <img src="http://ismailwp.infinityfreeapp.com/wp-content/uploads/2023/09/01.jpg" />
     </main>
   );
 }
