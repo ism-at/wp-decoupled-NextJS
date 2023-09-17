@@ -3,8 +3,7 @@ import { IoLogoWordpress } from "react-icons/io";
 
 export default async function Blog() {
   const res = await fetch(
-    "http://ismailwp.infinityfreeapp.com/wp-json/wp/v2/posts?categories=5&_embed/wp-json/wp/v2/posts?_embed",
-    { next: { tags: ["collection"] } }
+    "http://ismailwp.infinityfreeapp.com/wp-json/wp/v2/posts?categories=5&_embed/wp-json/wp/v2/posts?_embed"
   );
   const data = await res.json();
   const projectItems = data.map((project) => (
