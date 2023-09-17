@@ -19,3 +19,9 @@
 .blog section .wp-block-columns div p a {
   @apply text-blue-500 hover:text-blue-700;
 }
+
+.wp-block-heading {
+  margin: 10px 0 15px;
+  font-weight: bold;
+  border-bottom: 1px solid;
+}
